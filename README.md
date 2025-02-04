@@ -1,15 +1,13 @@
-# Simulação de um semáforo no Rasperry Pi Pico W
+Visão Geral
+Este repositório contém um programa escrito em C para o Raspberry Pi Pico W, utilizando o Pico SDK. O código simula um semáforo com as seguintes características:
 
-## Introdução
-Este repositório contém um programa em C desenvolvido para o Raspberry Pi Pico W, utilizando o Pico SDK. O código implementa:
-- Semáforo (temporizador periódico) - Um sistema que altera automaticamente as cores de um semáforo a cada 3 segundos.
+Semáforo (com temporização periódica) - O sistema altera automaticamente as cores do semáforo a cada 3 segundos.
+O código foi testado em ambiente de simulação com o Wokwi e a ferramenta educacional BitDogLab.
 
-O código foi testado utilizando o simulador Wokwi e a ferramenta educacional BitDogLab.
+Como Funciona
+O código gerencia três LEDs que representam as cores do semáforo.
+O LED vermelho acende primeiro, seguido pelo amarelo e, em seguida, pelo verde.
+A cada 3 segundos, a cor do semáforo muda de forma cíclica.
+Durante o loop principal, uma mensagem é exibida a cada segundo, indicando o estado do sistema.
 
-## Funcionamento
-- O código controla três LEDs que simulam um semáforo.
-- O LED vermelho acende primeiro, seguido pelo amarelo e, por fim, pelo verde.
-- A cada 3 segundos, a cor muda ciclicamente.
-- No loop principal, uma mensagem é impressa a cada segundo para indicar o funcionamento do sistema.
-
-Vídeo do resultado final na placa física: https://drive.google.com/file/d/1KS8rEzmwVnfgH3UltEQ2TpO_PKidYcFV/view?usp=sharing
+Link do resultado na Placa: https://drive.google.com/file/d/1MwEOnhRL4QAQo0199oZSYb61_GgdjKbb/view?usp=sharing
